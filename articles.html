@@ -1,0 +1,11 @@
+---
+layout: default
+---
+<ul class="list-group py-5 px-lg-5 mx-lg-5">
+  {% for post in site.posts %}
+    <li class="list-group-item border border-dark border-2 rounded shadow">
+      <h1><a class="text-reset text-decoration-none" href="{{ post.url }}">{{ post.title }}</a></h1>
+      {{ post.content }}
+    </li>
+  {% endfor %}
+</ul>
