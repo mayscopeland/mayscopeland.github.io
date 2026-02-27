@@ -3,18 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mays Copeland — fantasy sports software engineer building DraftKick, Whiffs, MVP, and more. Available for custom tool development.">
   <title>Mays Copeland</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chivo:wght@900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="bg-green-400">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
     <!-- Hero Section -->
-    <div class="bg-white border-4 border-black p-8 mb-8">
+    <div class="bg-white border-4 border-black p-6 sm:p-8 mb-8 shadow-[6px_6px_0_#000]">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
           <div class="md:col-span-2 md:pr-8">
-            <h1 class="text-6xl md:text-7xl font-bold mb-6 uppercase">Mays Copeland</h1>
-            <p class="text-2xl md:text-3xl mb-4">I build fantasy sports software.</p>
-            <p class="text-2xl md:text-3xl">I am comfortable with a variety of languages and technologies. For fantasy tools, my primary languages have been Python, JavaScript, and PHP.</p>
+            <h1 class="text-6xl md:text-7xl font-bold mb-6 uppercase font-heading">Mays Copeland</h1>
+            <p class="text-2xl md:text-3xl mb-4">I build fantasy sports software. Beyond my own projects, I'm available to turn custom spreadsheets and vibe-coded ideas into real technical tools.</p>
+            <p class="text-2xl md:text-3xl mb-4">I'm an expert at connecting and extracting sports data, fluent in a variety of languages and technologies.</p>
+            <p class="text-2xl md:text-3xl">If you want to work together, email me at <a href="mailto:mayscopeland@gmail.com" class="text-blue-700 font-bold hover:underline">mayscopeland@gmail.com</a>.</p>
           </div>
           <div class="flex justify-center md:justify-end">
             <img src="img/mays.png" alt="Mays Copeland" class="border-4 border-black rounded-full">
@@ -22,99 +27,121 @@
         </div>
     </div>
 
-    <!-- Projects Section -->
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+    <!-- Current Projects -->
+    <h2 class="font-heading text-2xl font-bold uppercase tracking-wide mb-6">Current Projects</h2>
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
       <!-- MVP -->
-      <div class="bg-white border-4 border-black p-8">
+      <div class="bg-white border-4 border-black p-6 sm:p-8 shadow-[6px_6px_0_#000] hover:shadow-[9px_9px_0_#000] hover:-translate-x-[3px] hover:-translate-y-[3px] transition-all duration-200">
         <div class="flex items-center gap-6 mb-6">
           <img src="img/mvp.svg" class="size-20">
           <div>
-            <h3 class="text-3xl font-bold mb-3 uppercase">MVP</h3>
-            <p class="text-lg mb-2">2025&mdash;present</p>
-            <p class="text-lg">Python (Starlette)</p>
+            <h3 class="text-3xl font-bold font-heading mb-2">MVP</h3>
+            <p class="text-lg">2026&mdash;present</p>
+            <p class="text-lg">Elixir (Phoenix)</p>
           </div>
         </div>
-        <p class="text-xl mb-4">MVP is my most ambitious idea yet: a fantasy league platform that's open source and customizable.</p>
-        <p class="text-xl mb-6">It's still in the early stages, but I'm excited to see where it goes.</p>
-        <a href="https://mvpfantasy.org" class="text-blue-700 hover:underline text-lg">mvpfantasy.org</a>
+        <p class="text-lg mb-4">MVP is my in-progress idea for an in-season companion to DraftKick. A tool that lets you update all your teams in one place.</p>
+        <p class="text-lg mb-6">It's still in the early stages, but I'm excited to see where it goes.</p>
+        <a href="https://themvp.app" class="text-blue-700 font-bold hover:underline text-lg inline-flex items-center gap-1.5">themvp.app <span>→</span></a>
       </div>
 
-      <!-- DraftKick -->
-      <div class="bg-white border-4 border-black p-8">
+      <!-- Whiffs -->
+      <div class="bg-white border-4 border-black p-6 sm:p-8 shadow-[6px_6px_0_#000] hover:shadow-[9px_9px_0_#000] hover:-translate-x-[3px] hover:-translate-y-[3px] transition-all duration-200">
+        <div class="flex items-center gap-6 mb-6">
+          <img src="img/whiffs.svg" class="size-20">
+          <div>
+            <h3 class="text-3xl font-bold font-heading mb-2">Whiffs</h3>
+            <p class="text-lg">2025&mdash;present</p>
+            <p class="text-lg">Python</p>
+          </div>
+        </div>
+        <p class="text-lg mb-4">Whiffs is an open-source framework for analyzing MLB player projection accuracy.</p>
+        <p class="text-lg mb-6">It performs advanced MAE and RMSE analysis, weighting errors by playing time to provide deeper insights into model performance.</p>
+        <a href="https://whiffs.org" class="text-blue-700 font-bold hover:underline text-lg inline-flex items-center gap-1.5">whiffs.org <span>→</span></a>
+      </div>
+
+      <!-- DraftKick (featured — full width) -->
+      <div class="bg-white border-4 border-black p-6 sm:p-8 shadow-[6px_6px_0_#000] hover:shadow-[9px_9px_0_#000] hover:-translate-x-[3px] hover:-translate-y-[3px] transition-all duration-200">
         <div class="flex items-center gap-6 mb-6">
           <img src="img/draftkick.svg" class="size-20">
           <div>
-            <h3 class="text-3xl font-bold mb-3 uppercase">DraftKick</h3>
-            <p class="text-lg mb-2">2022&mdash;present</p>
+            <h3 class="text-3xl font-bold font-heading mb-2">DraftKick</h3>
+            <p class="text-lg">2022&mdash;present</p>
             <p class="text-lg">JavaScript (Vue)</p>
           </div>
         </div>
-        <p class="text-xl mb-4">Powerful and easy-to-use fantasy draft software</p>
-        <p class="text-xl mb-6">DraftKick is my take on the draft assistant. It can handle every kind of league format with the player valuation algorithm I've been honing since 2008.</p>
-        <a href="https://draftkick.com" class="text-blue-700 hover:underline text-lg">draftkick.com</a>
+        <p class="text-lg mb-4">Powerful and easy-to-use fantasy draft software</p>
+        <p class="text-lg mb-6">DraftKick is my take on the draft assistant. It can handle every kind of league format with the player valuation algorithm I've been honing since 2008.</p>
+        <a href="https://draftkick.com" class="text-blue-700 font-bold hover:underline text-lg inline-flex items-center gap-1.5">draftkick.com <span>→</span></a>
       </div>
 
+      <!-- Fantasy Wayback -->
+      <div class="bg-white border-4 border-black p-6 sm:p-8 shadow-[6px_6px_0_#000] hover:shadow-[9px_9px_0_#000] hover:-translate-x-[3px] hover:-translate-y-[3px] transition-all duration-200">
+          <div class="flex items-center gap-6 mb-6">
+              <img src="img/wayback.svg" class="size-20">
+              <div>
+                  <h3 class="text-3xl font-bold font-heading mb-2">Fantasy Wayback</h3>
+                  <p class="text-lg">2020&mdash;present</p>
+                  <p class="text-lg">PHP</p>
+              </div>
+          </div>
+          <p class="text-lg mb-4">Fantasy Wayback calculates fantasy values for historical baseball seasons, going back to the start of the fantasy era (1980).</p>
+          <p class="text-lg mb-6">Valuations are made using the LastPlayerPicked Price Guide.</p>
+          <a href="https://fantasywayback.com" class="text-blue-700 font-bold hover:underline text-lg inline-flex items-center gap-1.5">fantasywayback.com <span>→</span></a>
+      </div>
+    </div>
+
+    <!-- Past Projects -->
+    <h2 class="font-heading text-2xl font-bold uppercase tracking-wide mb-6">Past Projects</h2>
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
       <!-- Projectile -->
-      <div class="bg-white border-4 border-black p-8">
+      <div class="bg-white border-4 border-black p-6 sm:p-8 shadow-[6px_6px_0_#000] hover:shadow-[9px_9px_0_#000] hover:-translate-x-[3px] hover:-translate-y-[3px] transition-all duration-200">
         <div class="flex items-center gap-6 mb-6">
           <img src="img/projectile.svg" class="size-20">
           <div>
-            <h3 class="text-3xl font-bold mb-3 uppercase">Projectile</h3>
-            <p class="text-lg mb-2">2021&mdash;2023</p>
+            <h3 class="text-3xl font-bold font-heading mb-2">Projectile</h3>
+            <p class="text-lg">2021&mdash;2023</p>
             <p class="text-lg">Python (Django)</p>
           </div>
         </div>
-        <p class="text-xl mb-4">Projectile was a fantasy stats site. It used by player valuation algorithm to build player pages with fantasy values, customized for any league.</p>
-        <p class="text-xl mb-6">I shut it down in 2023 to focus more of my attention on DraftKick.</p>
+        <p class="text-lg mb-4">Projectile was a fantasy stats site. It used by player valuation algorithm to build player pages with fantasy values, customized for any league.</p>
+        <p class="text-lg">I shut it down in 2023 to focus more of my attention on DraftKick.</p>
       </div>
 
       <!-- Open Projections -->
-      <div class="bg-white border-4 border-black p-8">
+      <div class="bg-white border-4 border-black p-6 sm:p-8 shadow-[6px_6px_0_#000] hover:shadow-[9px_9px_0_#000] hover:-translate-x-[3px] hover:-translate-y-[3px] transition-all duration-200">
         <div class="flex items-center gap-6 mb-6">
           <img src="img/box.svg" class="size-20">
           <div>
-            <h3 class="text-3xl font-bold mb-3 uppercase">Open Projections</h3>
-            <p class="text-lg mb-2">2021&mdash;2023</p>
+            <h3 class="text-3xl font-bold font-heading mb-2">Open Projections</h3>
+            <p class="text-lg">2021&mdash;2023</p>
             <p class="text-lg">Python (Flask)</p>
           </div>
         </div>
-        <p class="text-xl mb-4">The Open Projections were open source baseball player forecasts.</p>
-        <p class="text-xl mb-6">I dreamed of competing with the proprietary models, but they were still a ways off from that.</p>
-        <a href="https://github.com/mayscopeland/open_projections" class="text-blue-700 hover:underline text-lg">source</a>
+        <p class="text-lg mb-4">The Open Projections were open source baseball player forecasts.</p>
+        <p class="text-lg mb-6">I dreamed of competing with the proprietary models, but they were still a ways off from that.</p>
+        <a href="https://github.com/mayscopeland/open_projections" class="text-blue-700 font-bold hover:underline text-lg inline-flex items-center gap-1.5">source <span>→</span></a>
       </div>
 
       <!-- SavesBot -->
-      <div class="bg-white border-4 border-black p-8">
+      <div class="bg-white border-4 border-black p-6 sm:p-8 shadow-[6px_6px_0_#000] hover:shadow-[9px_9px_0_#000] hover:-translate-x-[3px] hover:-translate-y-[3px] transition-all duration-200">
         <div class="flex items-center gap-6 mb-6">
           <img src="img/savesbot.jpg" class="size-20">
           <div>
-            <h3 class="text-3xl font-bold mb-3 uppercase">@SavesBot</h3>
+            <h3 class="text-3xl font-bold font-heading mb-3">@SavesBot</h3>
             <p class="text-lg mb-2">2020&mdash;2023</p>
             <p class="text-lg">PHP</p>
           </div>
         </div>
-        <p class="text-xl mb-4">@SavesBot was a simple Twitter bot that watches the FanGraphs Closer Depth Chart and tweets about changes.</p>
-        <p class="text-xl mb-6">It was an unfortunate victim of the Twitter API changes in 2023.</p>
-        <a href="https://twitter.com/SavesBot" class="text-blue-700 hover:underline text-lg">@SavesBot</a>
-      </div>
-
-      <!-- Fantasy Wayback -->
-      <div class="bg-white border-4 border-black p-8">
-          <div class="flex items-center gap-6 mb-6">
-              <img src="img/wayback.svg" class="size-20">
-              <div>
-                  <h3 class="text-3xl font-bold mb-3 uppercase">Fantasy Wayback</h3>
-                  <p class="text-lg mb-2">2020&mdash;present</p>
-                  <p class="text-lg">PHP</p>
-              </div>
-          </div>
-          <p class="text-xl mb-4">Fantasy Wayback calculates fantasy values for historical baseball seasons, going back to the start of the fantasy era (1980).</p>
-          <p class="text-xl mb-6">Valuations are made using the LastPlayerPicked Price Guide.</p>
-          <a href="https://fantasywayback.com" class="text-blue-700 hover:underline text-lg">fantasywayback.com</a>
+        <p class="text-lg mb-4">@SavesBot was a simple Twitter bot that watches the FanGraphs Closer Depth Chart and tweets about changes.</p>
+        <p class="text-lg mb-6">It was an unfortunate victim of the Twitter API changes in 2023.</p>
+        <a href="https://twitter.com/SavesBot" class="text-blue-700 font-bold hover:underline text-lg inline-flex items-center gap-1.5">@SavesBot <span>→</span></a>
       </div>
 
       <!-- Price Guide User Scripts -->
-      <div class="bg-white border-4 border-black p-8">
+      <div class="bg-white border-4 border-black p-6 sm:p-8 shadow-[6px_6px_0_#000] hover:shadow-[9px_9px_0_#000] hover:-translate-x-[3px] hover:-translate-y-[3px] transition-all duration-200">
         <div class="flex items-center gap-6 mb-6">
           <div class="size-20 flex items-center justify-center">
             <svg class="size-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -122,17 +149,17 @@
             </svg>
           </div>
           <div>
-            <h3 class="text-3xl font-bold mb-3 uppercase">Price Guide User Scripts</h3>
-            <p class="text-lg mb-2">2009&mdash;2013</p>
+            <h3 class="text-3xl font-bold font-heading mb-2">Price Guide User Scripts</h3>
+            <p class="text-lg">2009&mdash;2013</p>
             <p class="text-lg">JavaScript</p>
           </div>
         </div>
-        <p class="text-xl mb-4">While the Price Guide was primarily a pre-season tool for draft prep, it could also generate in-season values.</p>
-        <p class="text-xl mb-6">These simple JS scripts would insert in-season dollar values onto your Yahoo, CBS, or ESPN league pages.</p>
+        <p class="text-lg mb-4">While the Price Guide was primarily a pre-season tool for draft prep, it could also generate in-season values.</p>
+        <p class="text-lg">These simple JS scripts would insert in-season dollar values onto your Yahoo, CBS, or ESPN league pages.</p>
       </div>
 
       <!-- LastPlayerPicked Price Guide -->
-      <div class="bg-white border-4 border-black p-8">
+      <div class="bg-white border-4 border-black p-6 sm:p-8 shadow-[6px_6px_0_#000] hover:shadow-[9px_9px_0_#000] hover:-translate-x-[3px] hover:-translate-y-[3px] transition-all duration-200">
         <div class="flex items-center gap-6 mb-6">
           <div class="size-20 flex items-center justify-center">
             <svg class="size-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -140,14 +167,14 @@
             </svg>
           </div>
           <div>
-            <h3 class="text-3xl font-bold mb-3 uppercase break-words">LastPlayerPicked<br>Price Guide</h3>
-            <p class="text-lg mb-2">2008&mdash;2013</p>
+            <h3 class="text-3xl font-bold font-heading mb-2 break-words">LastPlayerPicked<br>Price Guide</h3>
+            <p class="text-lg">2008&mdash;2013</p>
             <p class="text-lg">PHP</p>
           </div>
         </div>
-        <p class="text-xl mb-4">My first public project was the Price Guide on LastPlayerPicked.com, an online tool that created fantasy salaries for various projections, customized for any league configuration.</p>
-        <p class="text-xl mb-6">I maintained this site for the next five years before publishing the source on GitHub.</p>
-        <a href="https://github.com/mayscopeland/priceguide" class="text-blue-700 hover:underline text-lg">source</a>
+        <p class="text-lg mb-4">My first public project was the Price Guide on LastPlayerPicked.com, an online tool that created fantasy salaries for various projections, customized for any league configuration.</p>
+        <p class="text-lg mb-6">I maintained this site for the next five years before publishing the source on GitHub.</p>
+        <a href="https://github.com/mayscopeland/priceguide" class="text-blue-700 font-bold hover:underline text-lg inline-flex items-center gap-1.5">source <span>→</span></a>
       </div>
     </div>
 
@@ -156,9 +183,13 @@
   <footer class="bg-white border-t-4 border-black py-8">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex flex-col items-center gap-4">
-        <div class="flex gap-6">
-          <a href="https://x.com/mayscopeland" class="text-blue-700 hover:underline text-lg">Twitter</a>
-          <a href="https://github.com/mayscopeland" class="text-blue-700 hover:underline text-lg">GitHub</a>
+        <div class="flex gap-6 items-center">
+          <a href="https://x.com/mayscopeland" class="inline-flex items-center gap-2 font-bold hover:opacity-70 transition-opacity" aria-label="X / Twitter">
+            <svg class="size-6" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+          <a href="https://github.com/mayscopeland" class="inline-flex items-center gap-2 font-bold hover:opacity-70 transition-opacity" aria-label="GitHub">
+            <svg class="size-6" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+          </a>
         </div>
         <p class="text-center">
           © <span id="current-year"></span> Mays Copeland. All rights reserved.
