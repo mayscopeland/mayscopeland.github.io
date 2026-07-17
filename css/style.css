@@ -735,6 +735,21 @@
   .link-cta:hover {
     background-size: 100% 2px;
   }
+  .heading-link {
+    color: inherit;
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    background-size: 0 3px;
+    transition:
+      color 0.2s ease,
+      background-size 0.25s ease;
+  }
+  .heading-link:hover {
+    color: var(--color-lime-700);
+    background-size: 100% 3px;
+  }
   .section-label {
     font-family: var(--font-heading);
     font-weight: 700;
