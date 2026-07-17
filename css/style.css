@@ -6,6 +6,15 @@
     --font-sans: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-lime-50: #f7fee7;
+    --color-lime-100: #ecfccb;
+    --color-lime-300: #bef264;
+    --color-lime-500: #84cc16;
+    --color-lime-700: #4d7c0f;
+    --color-lime-800: #3f6212;
+    --color-lime-900: #365314;
+    --color-lime-950: #1a2e05;
+    --color-white: #fff;
     --spacing: 0.25rem;
     --container-xs: 20rem;
     --container-xl: 36rem;
@@ -49,15 +58,6 @@
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
     --font-heading: "Barlow Condensed", ui-sans-serif, system-ui, sans-serif;
-    --color-field: #eef6eb;
-    --color-field-mid: #ffffff;
-    --color-board: #ddecd8;
-    --color-chalk: #0a1610;
-    --color-chalk-muted: #4a5c4e;
-    --color-picked: #b8f000;
-    --color-picked-ink: #0a1610;
-    --color-picked-deep: #3d6b00;
-    --color-rule: #000000;
   }
 }
 @layer base {
@@ -361,26 +361,20 @@
     border-bottom-style: var(--tw-border-style);
     border-bottom-width: 4px;
   }
-  .border-chalk\/10 {
-    border-color: color-mix(in srgb, #0a1610 10%, transparent);
+  .border-lime-950 {
+    border-color: var(--color-lime-950);
+  }
+  .border-lime-950\/10 {
+    border-color: color-mix(in srgb, #1a2e05 10%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
-      border-color: color-mix(in oklab, var(--color-chalk) 10%, transparent);
+      border-color: color-mix(in oklab, var(--color-lime-950) 10%, transparent);
     }
   }
-  .border-rule {
-    border-color: var(--color-rule);
+  .bg-lime-50 {
+    background-color: var(--color-lime-50);
   }
-  .bg-board {
-    background-color: var(--color-board);
-  }
-  .bg-field {
-    background-color: var(--color-field);
-  }
-  .bg-field-mid {
-    background-color: var(--color-field-mid);
-  }
-  .fill-rule {
-    fill: var(--color-rule);
+  .bg-white {
+    background-color: var(--color-white);
   }
   .px-4 {
     padding-inline: calc(var(--spacing) * 4);
@@ -461,20 +455,20 @@
     --tw-tracking: var(--tracking-wider);
     letter-spacing: var(--tracking-wider);
   }
-  .text-chalk {
-    color: var(--color-chalk);
+  .text-lime-800 {
+    color: var(--color-lime-800);
   }
-  .text-chalk-muted {
-    color: var(--color-chalk-muted);
+  .text-lime-900 {
+    color: var(--color-lime-900);
   }
-  .text-picked-deep {
-    color: var(--color-picked-deep);
+  .text-lime-950 {
+    color: var(--color-lime-950);
   }
   .uppercase {
     text-transform: uppercase;
   }
-  .shadow-\[6px_6px_0_\#b8f000\] {
-    --tw-shadow: 6px 6px 0 var(--tw-shadow-color, #b8f000);
+  .shadow-\[6px_6px_0_var\(--color-lime-300\)\] {
+    --tw-shadow: 6px 6px 0 var(--tw-shadow-color, var(--color-lime-300));
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
   }
   .transition-colors {
@@ -482,10 +476,10 @@
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
     transition-duration: var(--tw-duration, var(--default-transition-duration));
   }
-  .hover\:text-picked-deep {
+  .hover\:text-lime-800 {
     &:hover {
       @media (hover: hover) {
-        color: var(--color-picked-deep);
+        color: var(--color-lime-800);
       }
     }
   }
@@ -620,13 +614,13 @@
     scroll-behavior: smooth;
   }
   body {
-    background-color: var(--color-field);
-    color: var(--color-chalk);
+    background-color: #ffffff;
+    color: var(--color-lime-950);
     font-family: var(--font-sans);
   }
   ::selection {
-    background-color: var(--color-picked);
-    color: var(--color-picked-ink);
+    background-color: var(--color-lime-300);
+    color: var(--color-lime-950);
   }
 }
 @layer components {
@@ -634,14 +628,20 @@
     position: relative;
     isolation: isolate;
     overflow: hidden;
-    background: radial-gradient(ellipse 90% 70% at 75% 35%, rgba(184, 240, 0, 0.35), transparent 55%), radial-gradient(ellipse 55% 45% at 10% 85%, rgba(221, 236, 216, 0.95), transparent 50%), linear-gradient(165deg, #f7fcf4 0%, var(--color-field) 50%, #e2efdc 100%);
+    background: radial-gradient( ellipse 90% 70% at 75% 35%, color-mix(in srgb, #bef264 35%, transparent), transparent 55% ), radial-gradient( ellipse 55% 45% at 10% 85%, color-mix(in srgb, #ecfccb 95%, transparent), transparent 50% ), linear-gradient(165deg, #ffffff 0%, var(--color-lime-50) 55%, var(--color-lime-50) 100%);
+    @supports (color: color-mix(in lab, red, red)) {
+      background: radial-gradient( ellipse 90% 70% at 75% 35%, color-mix(in srgb, var(--color-lime-300) 35%, transparent), transparent 55% ), radial-gradient( ellipse 55% 45% at 10% 85%, color-mix(in srgb, var(--color-lime-100) 95%, transparent), transparent 50% ), linear-gradient(165deg, #ffffff 0%, var(--color-lime-50) 55%, var(--color-lime-50) 100%);
+    }
   }
   .hero-atmosphere::before {
     content: "";
     position: absolute;
     inset: 0;
     z-index: -1;
-    background-image: repeating-linear-gradient( 0deg, transparent, transparent 47px, rgba(10, 22, 16, 0.05) 47px, rgba(10, 22, 16, 0.05) 48px ), repeating-linear-gradient( 90deg, transparent, transparent 47px, rgba(10, 22, 16, 0.05) 47px, rgba(10, 22, 16, 0.05) 48px );
+    background-image: repeating-linear-gradient( 0deg, transparent, transparent 47px, color-mix(in srgb, #1a2e05 5%, transparent) 47px, color-mix(in srgb, #1a2e05 5%, transparent) 48px ), repeating-linear-gradient( 90deg, transparent, transparent 47px, color-mix(in srgb, #1a2e05 5%, transparent) 47px, color-mix(in srgb, #1a2e05 5%, transparent) 48px );
+    @supports (color: color-mix(in lab, red, red)) {
+      background-image: repeating-linear-gradient( 0deg, transparent, transparent 47px, color-mix(in srgb, var(--color-lime-950) 5%, transparent) 47px, color-mix(in srgb, var(--color-lime-950) 5%, transparent) 48px ), repeating-linear-gradient( 90deg, transparent, transparent 47px, color-mix(in srgb, var(--color-lime-950) 5%, transparent) 47px, color-mix(in srgb, var(--color-lime-950) 5%, transparent) 48px );
+    }
     animation: board-drift 28s linear infinite;
     pointer-events: none;
   }
@@ -650,7 +650,10 @@
     position: absolute;
     inset: -20%;
     z-index: -1;
-    background: linear-gradient( 105deg, transparent 40%, rgba(184, 240, 0, 0.18) 50%, transparent 60% );
+    background: linear-gradient( 105deg, transparent 40%, color-mix(in srgb, #bef264 18%, transparent) 50%, transparent 60% );
+    @supports (color: color-mix(in lab, red, red)) {
+      background: linear-gradient( 105deg, transparent 40%, color-mix(in srgb, var(--color-lime-300) 18%, transparent) 50%, transparent 60% );
+    }
     animation: light-sweep 10s ease-in-out infinite;
     pointer-events: none;
   }
@@ -667,47 +670,47 @@
     display: inline-flex;
     align-items: center;
     gap: 0.375rem;
-    background-color: var(--color-picked);
-    color: var(--color-picked-ink);
+    background-color: var(--color-lime-500);
+    color: var(--color-lime-950);
     font-family: var(--font-heading);
     font-weight: 700;
     font-size: 1.125rem;
     letter-spacing: 0.04em;
     text-transform: uppercase;
     padding: 0.75rem 1.25rem;
-    border: 3px solid var(--color-rule);
-    box-shadow: 4px 4px 0 var(--color-rule);
+    border: 3px solid var(--color-lime-950);
+    box-shadow: 4px 4px 0 var(--color-lime-950);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
   }
   .btn-primary:hover {
     transform: translate(-2px, -2px);
-    box-shadow: 6px 6px 0 var(--color-rule);
+    box-shadow: 6px 6px 0 var(--color-lime-950);
   }
   .btn-secondary {
     display: inline-flex;
     align-items: center;
     gap: 0.375rem;
     background-color: transparent;
-    color: var(--color-chalk);
+    color: var(--color-lime-950);
     font-family: var(--font-heading);
     font-weight: 700;
     font-size: 1.125rem;
     letter-spacing: 0.04em;
     text-transform: uppercase;
     padding: 0.75rem 1.25rem;
-    border: 3px solid var(--color-rule);
+    border: 3px solid var(--color-lime-950);
     transition: background-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
   }
   .btn-secondary:hover {
-    background-color: var(--color-chalk);
-    color: var(--color-field-mid);
-    box-shadow: 4px 4px 0 var(--color-rule);
+    background-color: var(--color-lime-950);
+    color: #ffffff;
+    box-shadow: 4px 4px 0 var(--color-lime-950);
   }
   .product-plane {
-    border: 3px solid var(--color-rule);
-    background-color: var(--color-field-mid);
+    border: 3px solid var(--color-lime-950);
+    background-color: #ffffff;
     padding: 1.5rem;
-    box-shadow: 4px 4px 0 var(--color-rule);
+    box-shadow: 4px 4px 0 var(--color-lime-950);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
   }
   @media (min-width: 640px) {
@@ -717,13 +720,13 @@
   }
   .product-plane:hover {
     transform: translate(-3px, -3px);
-    box-shadow: 7px 7px 0 var(--color-picked);
+    box-shadow: 7px 7px 0 var(--color-lime-300);
   }
   .link-cta {
-    color: var(--color-picked-deep);
+    color: var(--color-lime-700);
     font-weight: 700;
     text-decoration: none;
-    background-image: linear-gradient(var(--color-picked-deep), var(--color-picked-deep));
+    background-image: linear-gradient(var(--color-lime-700), var(--color-lime-700));
     background-position: 0 100%;
     background-repeat: no-repeat;
     background-size: 0 2px;
@@ -738,13 +741,16 @@
     font-size: 0.95rem;
     letter-spacing: 0.18em;
     text-transform: uppercase;
-    color: var(--color-picked-deep);
+    color: var(--color-lime-700);
   }
   .archive-row {
     display: grid;
     gap: 0.25rem 1.5rem;
     padding: 1rem 0;
-    border-bottom: 1px solid rgba(10, 22, 16, 0.12);
+    border-bottom: 1px solid color-mix(in srgb, #1a2e05 12%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      border-bottom: 1px solid color-mix(in srgb, var(--color-lime-950) 12%, transparent);
+    }
   }
   @media (min-width: 768px) {
     .archive-row {
@@ -757,7 +763,10 @@
     flex-direction: column;
     gap: 0.75rem;
     padding: 1.25rem 0;
-    border-top: 1px solid rgba(10, 22, 16, 0.12);
+    border-top: 1px solid color-mix(in srgb, #1a2e05 12%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      border-top: 1px solid color-mix(in srgb, var(--color-lime-950) 12%, transparent);
+    }
   }
   @media (min-width: 768px) {
     .lab-item {
