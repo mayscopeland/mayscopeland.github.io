@@ -4,17 +4,17 @@
   --font-sans: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
   --font-heading: "Barlow Condensed", ui-sans-serif, system-ui, sans-serif;
 
-  --color-lime-50: #f7fee7;
-  --color-lime-100: #ecfccb;
-  --color-lime-200: #d9f99d;
-  --color-lime-300: #bef264;
-  --color-lime-400: #a3e635;
-  --color-lime-500: #84cc16;
-  --color-lime-600: #65a30d;
-  --color-lime-700: #4d7c0f;
-  --color-lime-800: #3f6212;
-  --color-lime-900: #365314;
-  --color-lime-950: #1a2e05;
+  --color-lime-50: #f4ffe4;
+  --color-lime-100: #e5ffc4;
+  --color-lime-200: #ccff90;
+  --color-lime-300: #acff50;
+  --color-lime-400: #8fff1a;
+  --color-lime-500: #72e600;
+  --color-lime-600: #58b800;
+  --color-lime-700: #408b00;
+  --color-lime-800: #356d07;
+  --color-lime-900: #2e5c0b;
+  --color-lime-950: #153400;
 }
 
 @layer base {

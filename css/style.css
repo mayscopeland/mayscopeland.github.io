@@ -6,14 +6,14 @@
     --font-sans: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-lime-50: #f7fee7;
-    --color-lime-100: #ecfccb;
-    --color-lime-300: #bef264;
-    --color-lime-500: #84cc16;
-    --color-lime-700: #4d7c0f;
-    --color-lime-800: #3f6212;
-    --color-lime-900: #365314;
-    --color-lime-950: #1a2e05;
+    --color-lime-50: #f4ffe4;
+    --color-lime-100: #e5ffc4;
+    --color-lime-300: #acff50;
+    --color-lime-500: #72e600;
+    --color-lime-700: #408b00;
+    --color-lime-800: #356d07;
+    --color-lime-900: #2e5c0b;
+    --color-lime-950: #153400;
     --color-white: #fff;
     --spacing: 0.25rem;
     --container-xs: 20rem;
@@ -365,7 +365,7 @@
     border-color: var(--color-lime-950);
   }
   .border-lime-950\/10 {
-    border-color: color-mix(in srgb, #1a2e05 10%, transparent);
+    border-color: color-mix(in srgb, #153400 10%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
       border-color: color-mix(in oklab, var(--color-lime-950) 10%, transparent);
     }
@@ -628,7 +628,7 @@
     position: relative;
     isolation: isolate;
     overflow: hidden;
-    background: radial-gradient( ellipse 90% 70% at 75% 35%, color-mix(in srgb, #bef264 35%, transparent), transparent 55% ), radial-gradient( ellipse 55% 45% at 10% 85%, color-mix(in srgb, #ecfccb 95%, transparent), transparent 50% ), linear-gradient(165deg, #ffffff 0%, var(--color-lime-50) 55%, var(--color-lime-50) 100%);
+    background: radial-gradient( ellipse 90% 70% at 75% 35%, color-mix(in srgb, #acff50 35%, transparent), transparent 55% ), radial-gradient( ellipse 55% 45% at 10% 85%, color-mix(in srgb, #e5ffc4 95%, transparent), transparent 50% ), linear-gradient(165deg, #ffffff 0%, var(--color-lime-50) 55%, var(--color-lime-50) 100%);
     @supports (color: color-mix(in lab, red, red)) {
       background: radial-gradient( ellipse 90% 70% at 75% 35%, color-mix(in srgb, var(--color-lime-300) 35%, transparent), transparent 55% ), radial-gradient( ellipse 55% 45% at 10% 85%, color-mix(in srgb, var(--color-lime-100) 95%, transparent), transparent 50% ), linear-gradient(165deg, #ffffff 0%, var(--color-lime-50) 55%, var(--color-lime-50) 100%);
     }
@@ -638,7 +638,7 @@
     position: absolute;
     inset: 0;
     z-index: -1;
-    background-image: repeating-linear-gradient( 0deg, transparent, transparent 47px, color-mix(in srgb, #1a2e05 5%, transparent) 47px, color-mix(in srgb, #1a2e05 5%, transparent) 48px ), repeating-linear-gradient( 90deg, transparent, transparent 47px, color-mix(in srgb, #1a2e05 5%, transparent) 47px, color-mix(in srgb, #1a2e05 5%, transparent) 48px );
+    background-image: repeating-linear-gradient( 0deg, transparent, transparent 47px, color-mix(in srgb, #153400 5%, transparent) 47px, color-mix(in srgb, #153400 5%, transparent) 48px ), repeating-linear-gradient( 90deg, transparent, transparent 47px, color-mix(in srgb, #153400 5%, transparent) 47px, color-mix(in srgb, #153400 5%, transparent) 48px );
     @supports (color: color-mix(in lab, red, red)) {
       background-image: repeating-linear-gradient( 0deg, transparent, transparent 47px, color-mix(in srgb, var(--color-lime-950) 5%, transparent) 47px, color-mix(in srgb, var(--color-lime-950) 5%, transparent) 48px ), repeating-linear-gradient( 90deg, transparent, transparent 47px, color-mix(in srgb, var(--color-lime-950) 5%, transparent) 47px, color-mix(in srgb, var(--color-lime-950) 5%, transparent) 48px );
     }
@@ -650,7 +650,7 @@
     position: absolute;
     inset: -20%;
     z-index: -1;
-    background: linear-gradient( 105deg, transparent 40%, color-mix(in srgb, #bef264 18%, transparent) 50%, transparent 60% );
+    background: linear-gradient( 105deg, transparent 40%, color-mix(in srgb, #acff50 18%, transparent) 50%, transparent 60% );
     @supports (color: color-mix(in lab, red, red)) {
       background: linear-gradient( 105deg, transparent 40%, color-mix(in srgb, var(--color-lime-300) 18%, transparent) 50%, transparent 60% );
     }
@@ -742,9 +742,7 @@
     background-position: 0 100%;
     background-repeat: no-repeat;
     background-size: 0 3px;
-    transition:
-      color 0.2s ease,
-      background-size 0.25s ease;
+    transition: color 0.2s ease, background-size 0.25s ease;
   }
   .heading-link:hover {
     color: var(--color-lime-700);
@@ -762,7 +760,7 @@
     display: grid;
     gap: 0.25rem 1.5rem;
     padding: 1rem 0;
-    border-bottom: 1px solid color-mix(in srgb, #1a2e05 12%, transparent);
+    border-bottom: 1px solid color-mix(in srgb, #153400 12%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
       border-bottom: 1px solid color-mix(in srgb, var(--color-lime-950) 12%, transparent);
     }
@@ -778,7 +776,7 @@
     flex-direction: column;
     gap: 0.75rem;
     padding: 1.25rem 0;
-    border-top: 1px solid color-mix(in srgb, #1a2e05 12%, transparent);
+    border-top: 1px solid color-mix(in srgb, #153400 12%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
       border-top: 1px solid color-mix(in srgb, var(--color-lime-950) 12%, transparent);
     }
